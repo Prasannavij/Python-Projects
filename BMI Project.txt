@@ -1,0 +1,20 @@
+username=input("Enter your Name: ")
+weight_kgs =float(input("Enter your Weight in Kg: "))
+height_m =float(input("Enter your Height in metre: "))
+BMI=weight_kgs/(height_m**2)
+print(BMI)
+
+if BMI>0:
+    if BMI<=18.4:
+        print(username+", You are underweight")
+        print("Try to increase your weight")
+    if 18.5<=BMI<=24.9:
+        print(username+", You are normal")
+    if 25.0<=BMI<=39.9:
+        print(username+", You are Overweight")
+        print("try to reduce your weight")
+    if BMI>=40.0:
+        print(username+", You are Obese")
+        print("try to reduce your weight")
+else:
+    print("Enter Valid Input")
